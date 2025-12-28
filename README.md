@@ -21,7 +21,7 @@ http://localhost:5173
 
 DEFAULT FLOW
 Register a new user
-Login with credentials
+Login with credentials (password atleat 6 characters)
 Access Dashboard
 Create, edit, delete tasks
 Logout when done
@@ -40,4 +40,14 @@ PUT - Update a task
 DELETE - Delete a task
 
 Authorization: Bearer <your_jwt_token>
+
+
+<img width="1872" height="872" alt="image" src="https://github.com/user-attachments/assets/48623dd1-6950-4d69-bdb9-1f9d6002e26a" />
+<img width="1897" height="887" alt="image" src="https://github.com/user-attachments/assets/dd7090d4-5e13-4600-9a4b-a1c56240ab50" />
+<img width="1890" height="887" alt="image" src="https://github.com/user-attachments/assets/93211728-2bd1-4780-aaec-d8ff691613c9" />
+<img width="1847" height="867" alt="image" src="https://github.com/user-attachments/assets/ad6da2bc-d3fa-4de0-8a34-be524dcca97a" />
+
+
+
+
 
