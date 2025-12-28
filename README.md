@@ -13,15 +13,31 @@ npm run dev
 Backend will run at:
 http://localhost:5000
 
-Frontend Setup
+FRONTEND SETUP
 cd frontend
 npm install
 npm run dev
 http://localhost:5173
 
-Default Flow
+DEFAULT FLOW
 Register a new user
 Login with credentials
 Access Dashboard
 Create, edit, delete tasks
 Logout when done
+
+API DOCUMENTATION :
+Base URL : http://localhost:5000/api
+
+Authentication Endpoints: 
+POST - /auth/register - Register a new user 
+POST - /auth/login - Login user & get JWT token
+
+Task Endpoints:
+POST - /tasks - Create a new task
+GET - Get all tasks
+PUT - Update a task
+DELETE - Delete a task
+
+Authorization: Bearer <your_jwt_token>
+
