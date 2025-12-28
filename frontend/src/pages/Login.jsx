@@ -48,6 +48,7 @@ export default function Login() {
           Login
         </button>
 
+        {/* Register link */}
         <p style={{ marginTop: '10px', textAlign: 'center' }}>
           Don't have an account?{' '}
           <Link

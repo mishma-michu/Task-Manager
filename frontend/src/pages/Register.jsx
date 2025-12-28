@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import api from '../api/axios';
 import { AuthContext } from '../context/AuthContext';
@@ -24,9 +24,8 @@ export default function Register() {
         email,
         password,
       });
-
-      login(res.data.token);
-      toast.success('Registration successful');
+      login(res.data.token); // automatically login after register
+      toast.success('Registered successfully');
       navigate('/dashboard');
     } catch (err) {
       toast.error(err.response?.data?.message || 'Registration failed');
@@ -37,14 +36,12 @@ export default function Register() {
     <div className="auth-container">
       <div className="auth-box">
         <h2>Register</h2>
-
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={e => setUsername(e.target.value)}
         />
-
         <input
           type="email"
           placeholder="Email"
@@ -52,7 +49,6 @@ export default function Register() {
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
-
         <input
           type="password"
           placeholder="Password"
@@ -60,17 +56,9 @@ export default function Register() {
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-
         <button onClick={handleRegister} style={{ marginTop: '20px' }}>
           Register
         </button>
-
-        <p style={{ marginTop: '10px', textAlign: 'center' }}>
-          Already have an account?{' '}
-          <Link to="/login" style={{ color: '#2575fc' }}>
-            Login
-          </Link>
-        </p>
       </div>
     </div>
   );

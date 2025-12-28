@@ -1,3 +1,7 @@
+.app {
+  min-height: 100vh;
+}
+
 .auth-container {
   display: flex;
   align-items: center;
@@ -42,4 +46,48 @@
 
 .auth-box button:hover {
   background-color: #6a11cb;
+}
+
+.dashboard {
+  padding: 20px;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.task-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.task-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
