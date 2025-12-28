@@ -1,22 +1,18 @@
-/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global font & background */
 body {
   overflow-y: hidden;
 }
 
-/* Remove default link styling */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Inputs */
 input,
 select,
 textarea {
@@ -24,7 +20,6 @@ textarea {
   font-size: 1rem;
 }
 
-/* Utility classes */
 .container {
   max-width: 1200px;
   margin: auto;

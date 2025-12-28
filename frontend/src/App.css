@@ -38,6 +38,7 @@
   padding: 12px;
   background-color: #2575fc;
   color: #fff;
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -48,46 +49,108 @@
   background-color: #6a11cb;
 }
 
-.dashboard {
-  padding: 20px;
-  min-height: 100vh;
-  background: #f4f6f8;
-}
-
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .task-grid {
-  margin-top: 20px;
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.task-card {
-  background: white;
-  padding: 15px;
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Colored background for auth pages */
+.auth-container {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+/* Heading color */
+.auth-box h2 {
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
   border-radius: 6px;
 }
 
-.task-actions {
-  margin-top: 10px;
+/* Buttons styling */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  background-color: #6a11cb;
+}
+
+/* Dashboard styling */
+.dashboard {
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  padding: 20px;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
 }
 
-.delete-btn {
-  background: crimson;
-  color: white;
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2575fc;
+  margin-bottom: 20px;
 }
 
-/* PAGINATION */
+/* Task cards */
+.task-grid .MuiCard-root {
+  background-color: #fff;
+  border-left: 5px solid #2575fc;
+  transition: transform 0.2s;
+}
+
+.task-grid .MuiCard-root:hover {
+  transform: translateY(-5px);
+}
+
+/* Pagination buttons */
+button {
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #6a11cb;
+}
+
+/* Pagination container */
 .pagination {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
 }
